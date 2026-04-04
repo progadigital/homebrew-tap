@@ -5,20 +5,20 @@
 class Logito < Formula
   desc "Developer-first runtime review logging CLI."
   homepage "https://progadigital.com"
-  version "0.1.8"
+  version "0.1.9"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/progadigital/homebrew-tap/releases/download/v0.1.8/logito_0.1.8_darwin_amd64.tar.gz"
-      sha256 "c971954660307144d5a60c394a8255336e853a43d4d77a074759f8a2ee036b53"
+      url "https://github.com/progadigital/homebrew-tap/releases/download/v0.1.9/logito_0.1.9_darwin_amd64.tar.gz"
+      sha256 "edc8491d2afa462a458a792a9f75a19bd59132b8efc825e8e45a8c47a361da5e"
 
       define_method(:install) do
         bin.install "logito"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/progadigital/homebrew-tap/releases/download/v0.1.8/logito_0.1.8_darwin_arm64.tar.gz"
-      sha256 "f66f7f6f4af6d9432dcf8b70d1c006d02ff5400f82020d03eed37a7111102dd8"
+      url "https://github.com/progadigital/homebrew-tap/releases/download/v0.1.9/logito_0.1.9_darwin_arm64.tar.gz"
+      sha256 "4b0416b64912cee5681732283c94eb48436a4ba798a7b29b281743336c3b4d7b"
 
       define_method(:install) do
         bin.install "logito"
@@ -28,15 +28,15 @@ class Logito < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/progadigital/homebrew-tap/releases/download/v0.1.8/logito_0.1.8_linux_amd64.tar.gz"
-      sha256 "685a6644f8e4929a099ef7173bad628d80f06f8b5a1ee8b57bbf04c275fdc257"
+      url "https://github.com/progadigital/homebrew-tap/releases/download/v0.1.9/logito_0.1.9_linux_amd64.tar.gz"
+      sha256 "0cbf8eeb146f52b748ba68bfcd3f7a52891f9db5898978b710c8bca6fc0bc136"
       define_method(:install) do
         bin.install "logito"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/progadigital/homebrew-tap/releases/download/v0.1.8/logito_0.1.8_linux_arm64.tar.gz"
-      sha256 "262df2a478e65abc71c1258e2e957f84bfb2fe1bcbd558cea634d3b74079ff1c"
+      url "https://github.com/progadigital/homebrew-tap/releases/download/v0.1.9/logito_0.1.9_linux_arm64.tar.gz"
+      sha256 "c2bb70fa3a4ccc7de9d243e962dfc16cdf5a37ae2bdec0659721f324fca96c01"
       define_method(:install) do
         bin.install "logito"
       end
